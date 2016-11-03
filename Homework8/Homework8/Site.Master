@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Homework8.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="color: whitesmoke/*; background-image: url('https://images3.alphacoders.com/487/thumb-1920-48737.jpg')*/; background-size: cover;">
+    <form id="form1" runat="server">
+        <div>
+            <div class="text-center jumbotron" style="height: 90px; color: black; background-image: url('https://www.communityenergyinc.com/wp-content/uploads/2013/10/temple_201_4c-logo.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: white; margin-top: 10px">
+            </div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-left">
+                            <img style="height: 50px; width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/2000px-Temple_T_logo.svg.png" /></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="AboutYou.aspx">About You</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="LoginHome.aspx"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <h4 class="text-center">Temple University Career Fair Registration</h4>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
